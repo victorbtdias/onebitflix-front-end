@@ -19,7 +19,7 @@ const PresentationSection = function () {
               Estude de onde estiver a qualquer momento e continue <br />
               evoluindo como programador.
             </p>
-            <Link href="/register">
+            <Link href="/register" className={styles.link}>
               <Button outline className={styles.btnCta}>
                 ACESSE AGORA
                 <img
