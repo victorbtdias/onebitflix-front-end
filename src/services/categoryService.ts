@@ -35,8 +35,6 @@ const categoriesService = {
         },
       })
       .catch((error) => {
-        console.log(error.response.data.message);
-
         return error.response;
       });
 
