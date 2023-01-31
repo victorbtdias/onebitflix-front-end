@@ -3,18 +3,14 @@ import { Button, Container } from "reactstrap";
 import useSWR from "swr";
 import courseService, { CourseType } from "../../../services/courseService";
 import HeaderAuth from "../../common/headerAuth";
+import PageSpinner from "../../common/spinner";
 import styles from "./styles.module.scss";
 
 const FeaturedSection = function () {
   const { data, error } = useSWR("/featured", courseService.getFeaturedCourses);
 
   if (error) return error;
-  if (!data)
-    return (
-      <>
-        <p>Loading...</p>
-      </>
-    );
+  if (!data) return <PageSpinner />;
 
   return (
     <>
