@@ -88,6 +88,8 @@
   font-size: 15px;
   padding: 6px 20px;
   transition: 0.4s;
+  display: block;
+  margin: 10px auto;
   &:hover {
     border-color: $darkRed;
     background-color: transparent;
@@ -113,8 +115,7 @@
   padding: 14px 0px;
   &:hover {
     background-color: transparent;
-    border-color: $lightRed;
-    color: $lightGray;
+    color: $lightRed;
   }
   &:focus {
     box-shadow: none;
