@@ -14,10 +14,8 @@ const Search = function () {
   const [searchResult, setSearchResult] = useState<CourseType[]>([]);
 
   const searchCourses = async function () {
-    if (searchName === "string") {
-      const res = await courseService.getSearch(searchName);
-      setSearchResult(res.data.courses);
-    }
+    const res = await courseService.getSearch(searchName);
+    setSearchResult(res.data.courses);
   };
 
   useEffect(() => {

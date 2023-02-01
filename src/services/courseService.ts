@@ -99,9 +99,7 @@ const courseService = {
 
     const res = await api
       .get(`/courses/search?name=${name}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
+        headers: { Authorization: `Bearer ${token}` },
       })
       .catch((error) => {
         return error.response;

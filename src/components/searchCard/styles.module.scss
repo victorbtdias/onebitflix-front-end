@@ -22,9 +22,13 @@
   font-weight: bold;
   padding: 10px 20px;
   transition: 0.4s;
+  color: white;
 }
 .searchCardDescription {
   color: $lightGray;
   padding: 0px 20px;
   font-size: 18px;
+}
+.link {
+  text-decoration: none;
 }
