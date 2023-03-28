@@ -12,6 +12,7 @@ import PageSpinner from "@/src/components/common/spinner";
 const UserInfo = function () {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [form, setForm] = useState("userForm");
 
   useEffect(() => {
     if (!sessionStorage.getItem("onebitflix-token")) {
@@ -25,7 +26,6 @@ const UserInfo = function () {
     return <PageSpinner />;
   }
 
-  const [form, setForm] = useState("userForm");
   return (
     <>
       <Head>
